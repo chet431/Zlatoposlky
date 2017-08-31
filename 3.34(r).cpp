@@ -1,21 +1,22 @@
+#include <cmath>
 #include <iostream>
 using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "RUSSIAN");
-	int a, b, c, d;
+	int a, b, c, d, v, h;
 
 	cin >> a; // позиция ферзя по вертикале ( 1 <= a <= 8)
 	cin >> b; // позиция ферзя по горизонтале ( 1 <= a <= 8)
 	cin >> c; // позиция фигуры по вертикале ( 1 <= a <= 8)
 	cin >> d; // позиция фигуры по горизонтале ( 1 <= a <= 8)
 
-	if (a == c + 1 || a == c - 1 && b == d + 2 || b == d - 2)
-	{
-		cout << "Ферзь угрожает фигуре" << endl;
-	}
+	v = abs(a - c);
+	h = abs(b - d);
 	
-	else if (a == c + 2 || a == c - 2 && b == d + 1 || b == d - 1)
+	
+	
+	if (v == 1 && h == 2 || v == 2 && h == 1)
 	{
 		cout << "Ферзь угрожает фигуре" << endl;
 	}
