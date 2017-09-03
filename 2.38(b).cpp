@@ -10,14 +10,9 @@ int main()
 	setlocale(LC_ALL, "RUSSIAN");
 	int k, n;
 	cin >> k;
-	if (k / 1 == k)
-	{
-		cout << k << "-я цифра равнa 1" << endl;
-	}
-	else 
-	{
-		cout << k << "-я цифра не равна 1" << endl;
-	}
+	
+	cout << k << "-я цифра равнa 1" << endl;
+	
 	system("PAUSE");
 	return 0;
 }

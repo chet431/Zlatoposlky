@@ -8,7 +8,7 @@ int main()
 	setlocale(LC_ALL, "RUSSIAN");
 	int a, b, c;
 	cin >> a >> b >> c;
-	if (b > a && b > c && a > c)
+	if (b > a && a > c)
 	{
 		cout << "Неравенство b > a > c выполняется" << endl;
 	}

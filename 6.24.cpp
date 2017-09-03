@@ -22,7 +22,7 @@ int main()
 		{
 			sum += a;
 		}
-		if (a % 2 == 0 && a > 0)
+		if (a % 2 == 0)
 		{
 			++kolvo;
 		}
